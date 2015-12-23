@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "021e91bf737cc34625c05e53239a5812",
-    "content-hash": "55c76d7eb20ac0e7ec00efabf3fa60ce",
+    "hash": "a2c360227df97773a2872175c2cf85a0",
+    "content-hash": "bb45ced4a51b58b444dfed11b63a138d",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -1223,6 +1223,77 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2015-11-30 12:36:17"
+        },
+        {
+            "name": "wplib/wplib",
+            "version": "0.11.5",
+            "source": {
+                "type": "git",
+                "url": "http://github.org/wplib/wplib",
+                "reference": "797d9fb8acc73849a28ad3f1e67360e1995368b4"
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "wplib/lawpress": "A sample WPLib App for developing with Law Firm websites",
+                "wplib/underscores4wplib": "A port of the Underscores theme to demo WPLib",
+                "wplib/wplib-box": "A Vagrant box for WPLib-specific WordPress development",
+                "wplib/wplib-cli": "A command-line scaffolding tool for WPLib"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "WPLib_": "includes/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "The WPLib Team",
+                    "email": "team@wplib.org",
+                    "homepage": "http://wplib.org",
+                    "role": "Supporting Organization"
+                },
+                {
+                    "name": "Mike Schinkel",
+                    "email": "mike@newclarity.net",
+                    "homepage": "http://about.me/mikeschinkel",
+                    "role": "Architect and Developer"
+                },
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com",
+                    "homepage": "http://wpscholar.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Daryl Lozupone",
+                    "email": "daryl@newclarity.net",
+                    "homepage": "https://www.linkedin.com/in/daryllozupone",
+                    "role": "DevOp and Developer"
+                }
+            ],
+            "description": "An MV* Foundation Library for Building Custom WordPress Sites",
+            "homepage": "http://github.com/wplib/wplib",
+            "keywords": [
+                "cli",
+                "console",
+                "php",
+                "scaffolding",
+                "wordpress",
+                "wplib"
+            ],
+            "support": {
+                "email": "support@wplib.org",
+                "issues": "https://github.com/wplib/wplib/issues",
+                "forum": "https://wplib.slack.com/",
+                "source": "https://github.com/wplib/wplib",
+                "docs": "http://wplib.prg"
+            },
+            "time": "2015-12-22 08:27:30"
         }
     ],
     "packages-dev": [],

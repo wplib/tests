@@ -9,7 +9,14 @@
             "email": "team@wplib.org"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "http://github.org/wplib/wplib"
+        }
+    ],
     "require": {
+        "wplib/wplib": "*",
         "phpunit/phpunit": "4.8.*",
         "phpmd/phpmd": "2.3.*"
     }
