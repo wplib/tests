@@ -1,0 +1,16 @@
+{
+    "name": "wplib/tests-wplib",
+    "description": "The automated testing suite for WPLib",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "The WPLib Team",
+            "email": "team@wplib.org"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "4.8.*",
+        "phpmd/phpmd": "2.3.*"
+    }
+}
