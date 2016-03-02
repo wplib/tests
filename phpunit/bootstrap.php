@@ -3,10 +3,18 @@ echo 'Welcome to the WPLib Test Suite' . PHP_EOL;
 echo 'Version 0.1' . PHP_EOL;
 echo 'Author: WPLib Team <team@wplib.org>' . PHP_EOL;
 
-define( 'WPLIB_TESTS_WORKING_DIR', dirname( __DIR__ ) );
+$working = getenv( 'WPLIB_TESTS_WORKING_DIR' );
 
-require WPLIB_TESTS_WORKING_DIR . '/vendor/wp-tests/trunk/tests/phpunit/includes/functions.php';
-require WPLIB_TESTS_WORKING_DIR . '/vendor/wp-tests/trunk/tests/phpunit/includes/bootstrap.php';
+if ( isset( $working ) && '' != $working ) {
+    define( 'WPLIB_TESTS_WORKING_DIR', $working );
+}
 
-require 'framework/test-case.php';
-require WPLIB_TESTS_WORKING_DIR . '/vendor/wplib/wplib/wplib.php';
+if( ! defined( 'WPLIB_TESTS_WORKING_DIR' ) ) {
+    define( 'WPLIB_TESTS_WORKING_DIR', dirname( __DIR__ ) );
+}
+
+require WPLIB_TESTS_WORKING_DIR . '/vendor/wp-tests/tags/4.4.2/tests/phpunit/includes/functions.php';
+require WPLIB_TESTS_WORKING_DIR . '/vendor/wp-tests/tags/4.4.2/tests/phpunit/includes/bootstrap.php';
+
+require WPLIB_TESTS_WORKING_DIR . '/vendor/wplib/tests-wplib/phpunit/framework/test-case.php';
+require WPLIB_TESTS_WORKING_DIR . '/wplib.php';

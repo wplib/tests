@@ -4,7 +4,7 @@ namespace Tests\WPLib\UnitTests {
 	use Tests\WPLib\WPLib_Test_Case;
 	use \WPLib_Base;
 
-	require_once WPLIB_TESTS_WORKING_DIR . '/vendor/wplib/wplib/includes/class-base.php';
+	require_once WPLIB_TESTS_WORKING_DIR . '/includes/class-base.php';
 
 	/**
 	 * Class Test_Base
