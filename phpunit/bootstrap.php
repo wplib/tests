@@ -27,3 +27,8 @@ require WP_TESTS_DIR . '/tests/phpunit/includes/bootstrap.php';
 
 require WPLIB_TESTS_WORKING_DIR . '/vendor/wplib/tests-wplib/phpunit/framework/test-case.php';
 require WPLIB_TESTS_WORKING_DIR . '/wplib.php';
+
+require WPLIB_TESTS_WORKING_DIR . '/defines.php';
+
+wplib_define( 'WPLib_Runmode', 'DEVELOPMENT' );
+wplib_define( 'WPLib_Stability', 'EXPERIMENTAL' );
