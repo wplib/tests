@@ -105,6 +105,9 @@ namespace Tests\WPLib\UnitTests {
 
 		}
 
+		/**
+		 * @covers add_clss_action
+		 */
 		function testAddClassActionSpecifyPriority() {
 
 			$this->markTestIncomplete( 'has_action is not working as expected.');
@@ -130,16 +133,23 @@ namespace Tests\WPLib\UnitTests {
 		function testGet() {
 
 			$this->assertEquals( 'foobar', $this->_sut->foo );
-			$this->assertNull( $this->_sut->baz );
+			$this->setExpectedException( 'PHPUnit_Framework_Error' );
+			$this->_sut->baz;
 
 		}
 
+		/**
+		 * @covers __set
+		 */
 		function testSet() {
 
 			$this->_sut->foo = 'asdf';
 			$this->assertEquals( 'asdf', $this->_sut->foo );
 		}
 
+		/**
+		 * @covers __call
+		 */
 		function testCall() {
 
 			$this->markTestIncomplete( 'Not yet implemented' );
