@@ -26,7 +26,7 @@ namespace Tests\WPLib {
 
             $reflection = new \ReflectionMethod( $class, $method );
             $reflection->setAccessible( true );
-            $reflection->invoke( $class );
+            return $reflection->invoke( $class );
 
         }
 
@@ -34,7 +34,7 @@ namespace Tests\WPLib {
 
             $reflection = new \ReflectionMethod( $class, $method );
             $reflection->setAccessible( true );
-            $reflection->invoke( $class, $args );
+            return $reflection->invoke( $class, $args );
 
         }
 
