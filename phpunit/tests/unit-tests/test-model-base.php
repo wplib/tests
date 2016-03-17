@@ -29,7 +29,7 @@ namespace Tests\WPLib\UnitTests {
         protected $_sut;
 
         /**
-         * 
+         *
          */
         function setUp() {
 
@@ -40,7 +40,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_constant
+         * @covers ::get_constant
          */
         function testGetConstant() {
 

@@ -50,7 +50,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers set_state
+		 * @covers ::set_state
 		 */
 		function testSetState() {
 
@@ -69,7 +69,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers __construct
+		 * @covers ::__construct
 		 * @uses   WPLib_Base::set_state
 		 * @depends  testSetState
 		 */
@@ -84,7 +84,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers get_constant
+		 * @covers ::get_constant
 		 */
 		function testGetConstant() {
 
@@ -94,7 +94,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers add_class_action
+		 * @covers ::add_class_action
 		 */
 		function testAddClassAction() {
 
@@ -106,7 +106,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers add_clss_action
+		 * @covers ::add_clss_action
 		 */
 		function testAddClassActionSpecifyPriority() {
 
@@ -117,7 +117,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers __isset
+		 * @covers ::__isset
 		 * @depends testConstructor
 		 */
 		function testIsset() {
@@ -127,7 +127,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers __get
+		 * @covers ::__get
 		 * @depends testConstructor
 		 */
 		function testGet() {
@@ -139,7 +139,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers __set
+		 * @covers ::__set
 		 */
 		function testSet() {
 
@@ -148,7 +148,7 @@ namespace Tests\WPLib\UnitTests {
 		}
 
 		/**
-		 * @covers __call
+		 * @covers ::__call
 		 */
 		function testCall() {
 

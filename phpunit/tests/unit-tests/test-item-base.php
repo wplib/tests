@@ -79,7 +79,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __construct
+         * @covers ::__construct
          * @uses   _get_property_class
          * @uses   \Tests\WPLib\UnitTests\Item_View::make_new
          */
@@ -95,7 +95,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __construct
+         * @covers ::__construct
          */
         function testConstructorWithObjects() {
 
@@ -115,7 +115,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __construct
+         * @covers ::__construct
          */
         function testConstructorWithStrings() {
 
@@ -132,7 +132,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __isset
+         * @covers ::__isset
          */
         function testIsset() {
 
@@ -142,7 +142,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __get
+         * @covers ::__get
          */
         function testGet() {
 
@@ -151,7 +151,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers  __set
+         * @covers :: __set
          * @depends testGet
          */
         function testSet() {
@@ -162,7 +162,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __call
+         * @covers ::__call
          */
         function testCallForModel() {
 
@@ -171,7 +171,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __call
+         * @covers ::__call
          */
         function testCallForView() {
 
@@ -180,7 +180,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __call
+         * @covers ::__call
          */
         function testCallForError() {
 

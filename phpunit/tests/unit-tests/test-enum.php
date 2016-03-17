@@ -44,7 +44,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_slug
+         * @covers ::get_slug
          */
         function testGetSlug() {
 
@@ -54,7 +54,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_enum
+         * @covers ::get_enum
          */
         function testGetEnum() {
 
@@ -64,7 +64,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_enum_class
+         * @covers ::get_enum_class
          */
         function testGetEnumClass() {
 
@@ -73,7 +73,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_enum_classes
+         * @covers ::get_enum_classes
          */
         function testGetEnumClasses() {
 
@@ -82,7 +82,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_value
+         * @covers ::get_value
          */
         function testGetValue() {
 
@@ -91,7 +91,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers set_value
+         * @covers ::set_value
          * @uses   is_valid
          */
         function testSetValue() {
@@ -103,7 +103,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers  set_enum
+         * @covers :: set_enum
          * @uses    set_value
          * @depends testGetValue
          * @depends testSetValue
@@ -117,7 +117,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_enum_value
+         * @covers ::get_enum_value
          */
         function testGetEnumValue() {
 
@@ -126,7 +126,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_enum_values
+         * @covers ::get_enum_values
          */
         function testGetEnumValues() {
 
@@ -148,7 +148,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers has_enum_const
+         * @covers ::has_enum_const
          */
         function testHasEnumConst() {
 
@@ -157,7 +157,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_enum_const
+         * @covers ::get_enum_const
          */
         function testGetEnumConst() {
 
@@ -167,7 +167,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers get_enum_consts
+         * @covers ::get_enum_consts
          */
         function testGetEnumConsts() {
 
@@ -186,7 +186,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers has_enum_value
+         * @covers ::has_enum_value
          */
         function testHasEnumValue() {
 
@@ -195,7 +195,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers is_valid
+         * @covers ::is_valid
          * @uses   has_enum_value
          */
         function testIsValid() {
@@ -205,7 +205,7 @@ namespace Tests\WPLib\UnitTests {
         }
 
         /**
-         * @covers __toString
+         * @covers ::__toString
          */
         function testToString() {
 
